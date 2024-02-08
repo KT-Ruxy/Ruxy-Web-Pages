@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <title>Ruxy</title>
     <style>
-        body {
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .tab-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:300px;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .background-top {
             background-image: url('assets/background.png');
-            background-size: cover; /* 画像を画面に合わせて伸縮 */
-            background-position: top; /* 画像を中央に配置 */
-            color: white;
+            background-size: cover;
+            background-position: top;
+            padding: 0;
+            height: 100vh;
+            margin: 300px 0 0;
+        }
+        .background-under {
+            background-image: url('assets/background-under.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
 
-<h1>わいのぺーじ</h1>
-<p>Ruxyって名前として使ってるけど実はブランド名でもある。</p>
-<a href="https://modrinth.com/user/ruxy">Modrinthみていってや</a>
+<div class="tab-bar"></div> <!-- タブバーを追加 -->
+
+<div class="background-top"></div>
+
+<div class="background-under"></div>
+
+<div class="background-under"></div>
 
 </body>
 </html>
